@@ -4,12 +4,16 @@ public class DummyTest {
 
     @Test
     public void DummyTest1(){
-        System.out.println("First Name is "+ System.getenv("FirstName"));
+
+        String FirstName = System.getenv().get("#{FirstName}#");
+        System.out.println("First Name is "+ FirstName);
+
 
     }
 
     @Test
     public void DummmyTest2(){
-        System.out.println("Last Name is "+ System.getenv("LastName"));
+        String LastName = System.getenv().get("#{LastName}#");
+        System.out.println("Last Name is "+ LastName);
     }
 }
