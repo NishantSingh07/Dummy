@@ -8,7 +8,6 @@ public class DummyTest {
         String FirstName = System.getenv().get("#{FirstName}#");
         System.out.println("First Name is "+ FirstName);
 
-
     }
 
     @Test
